@@ -14,12 +14,12 @@ from nltk.corpus import stopwords
 from nltk.probability import FreqDist
 
 #definimos un texto en español que queremos analizar
-texto = """
-
-hola, soy Adela Silva, me gusta la programacion, 
-vivo en villeta cundinamarca
-Mi compañero es Jheyson, el es profesor de talento tech
-"""
+texto = (
+    "Hola, mi nombre es Adela Silva Gaitan, tengo 29 años, soy instructora SENA del programa de articulación con la media, en el programa Recursos humanos en el municipio de Villeta Cundinamarca. En mis tiempos libres me gusta leer, dormir y compartir con mis seres queridos."
+    "Hola, mi nombre es Mauricio Vélez, tengo 48 años y soy Ingeniero de Sistemas.  Actualmente, me desempeño como instructor del programa de Articulación del SENA con la Educación Media, del Centro de la Innovación, la Agroindustria y la Aviación.  Dentro de mis pasatiempos favoritos está la Fotografía y los VideoJuegos."
+    "Hola, mi nombre es Harold Marin, tengo 29 años y soy Ingeniero de Software.  Actualmente, me desempeño como instructor del programa de Articulación del SENA con la Educación Media, del Centro de la Innovación, la Agroindustria y la Aviación.  Dentro de mis pasatiempos favoritos estálos VideoJuegos."
+    "Hola soy Haddy Moreno, tengo la edad de Cristo, soy ingeniera de sistemas, actualmente me desempeño como instructora Sena en el tecnólogo en Adso, mi hobby es bailar en especial Danza afrocolombiana"
+)
 #tokenizacion, convertimos el texto en una lista d epalbra sindividuales
 palabras = word_tokenize(texto, language= "spanish")
 
